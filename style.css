@@ -101,7 +101,7 @@ footer {
         display: flex;
         flex-direction: row;
         width: 57.75rem;
-        background-image: url("./images/bg-pattern-desktop.svg");
+        background-image: url("images/bg-pattern-desktop.svg");
         background-size: 100%;
         background-position-x: -526px;
         background-position-y: -17.5625rem ;
