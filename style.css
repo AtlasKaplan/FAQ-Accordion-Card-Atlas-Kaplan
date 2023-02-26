@@ -1,0 +1,126 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: .75rem;
+    
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    margin: 1.5rem 0 1.875rem;
+    font-size: 2.26rem;
+    
+}
+
+
+.container {
+    position: relative;
+    background-color: white;
+    margin: 9.375rem auto 1.25rem;
+    padding: 1.5rem;
+    border-radius: 24px;
+    font-size: .85rem;
+    width: 20.625rem;
+    min-width: 20.625rem;
+    min-height: 33.5rem;
+    box-shadow: 0 10px 40px rgb(51, 43, 63) ;
+}
+
+
+.seccion1 img {
+    width: 15rem;
+    display: block;
+    margin: -8.25rem auto 0;
+}
+
+.seccion1 img:nth-child(2) {
+    margin-top: -75px;
+}
+
+.seccion2 img {
+    padding-top: .3125rem;
+}
+
+details {
+    color: hsl(238, 29%, 16%);
+}
+
+details[open] {
+    font-weight: 700;
+}
+summary {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+summary:hover {
+    cursor: pointer;
+    color: hsl(14, 88%, 65%);
+    font-weight: 700;
+}
+
+summary img {
+    position: absolute;
+    right: 30px;
+    transition: 300ms;
+}
+details[open] .arrow{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: hsl(238, 29%, 16%);
+    font-weight: 400;
+}
+
+hr {
+    border-color: transparent;
+    border-bottom-color: hsl(0, 0%, 77%);
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 71.25rem) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 57.75rem;
+        background-image: url("./images/bg-pattern-desktop.svg");
+        background-size: 100%;
+        background-position-x: -526px;
+        background-position-y: -17.5625rem ;
+        background-repeat: no-repeat;
+    }
+
+    .seccion1, .seccion2{
+        width: 100%;
+    }
+
+    .seccion1 img {
+        width: 29.625rem;
+        margin: 4.1875rem 0 0 -8.125rem;
+    }
+    .seccion1 img:nth-child(2) {
+        display: none;
+    }
+    
+    h1 {
+        text-align: left;
+    }
+}
